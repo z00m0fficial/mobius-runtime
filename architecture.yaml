@@ -1,0 +1,19 @@
+repository: mobius-runtime
+version: 0.1.0
+status: dp1
+layer: execution-kernel
+department: Runtime
+service: Mobius Kernel
+mission: Execute every Intelligence Loop while enforcing constitutional governance.
+capabilities:
+  - loop-manager
+  - execution-graph
+  - state-store
+  - queue-engine
+  - constitution-check
+  - telemetry-hooks
+quality_gates:
+  runtime_required: true
+  memory_required: true
+  governance_required: true
+  pulse_required: true
