@@ -1,0 +1,18 @@
+{
+  "name": "mobius-runtime",
+  "version": "0.1.0",
+  "description": "Executable kernel for Mobius OS.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test dist/**/*.test.js",
+    "validate": "npm run build && npm run test",
+    "start": "node dist/server.js"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
