@@ -1,0 +1,48 @@
+mobius:
+  repository: mobius-runtime
+  product: Mobius OS
+  capability: Runtime Kernel
+  department: Runtime
+  owner: Mobius Technologies
+  mission: Execute every Intelligence Loop while enforcing constitutional governance.
+  maturity: implemented
+  consumes:
+    - FounderInput
+    - ExecutionPolicy
+    - RuntimeEvent
+  produces:
+    - RuntimeContext
+    - ExecutionGraph
+    - LoopState
+  schemas:
+    - RuntimeContext
+    - RuntimeStep
+    - ExecutionGraph
+    - ExecutionPolicy
+  events:
+    - RuntimeLoopCreated
+    - RuntimeStepCompleted
+    - RuntimeLoopCompleted
+  dependencies:
+    - mobius-brain
+    - atlas-core
+    - mobius-memory
+    - mobius-router
+    - mobius-provider-engine
+    - mobius-pulse
+    - mobius-mcms
+    - mobius-command-center
+  dependents:
+    - mobius-os
+    - mobius-sonic
+  pulse_metrics:
+    - loop-completion-rate
+    - runtime-step-latency
+    - runtime-failure-rate
+  memory_events:
+    - runtime-loop-completed
+  platform_release: DP1 First Breath
+  architecture_version: Enterprise Beta v0.1
+  genesis_version: Genesis v1.0
+  canon_version: Canon v1.0
+  sync_status: synchronized
