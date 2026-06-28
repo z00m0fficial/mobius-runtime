@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mobius-runtime
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mobius-runtime
+  template:
+    metadata:
+      labels:
+        app: mobius-runtime
+    spec:
+      containers:
+        - name: mobius-runtime
+          image: mobius-runtime:latest
+          imagePullPolicy: IfNotPresent
+          command: ["node", "dist/demo.js"]
