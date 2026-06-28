@@ -1,0 +1,7 @@
+services:
+  mobius-runtime:
+    build: ..
+    container_name: mobius-runtime
+    environment:
+      NODE_ENV: production
+    command: ["node", "dist/demo.js"]
